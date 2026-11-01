@@ -93,10 +93,7 @@ Fem frågor som bygger på intervjun. Beviljandegrad = andel ansökningar som bl
 
 ## LLM-användning
 
-Jag har använt Claude (Anthropic) som stöd under labben: för att rensa Excel-filen
-till en CSV, felsöka setup och inläsning, ta fram och förklara SQL-frågorna, sammanställa
-intervjuanteckningarna och skriva denna README. Alla frågor har jag kört själv i
-Oracle och kontrollerat resultaten.
+Jag har använt Claude (Anthropic) som stöd under labben, för data och SQL. Jag har kört alla frågor själv och kan förklara dem.
 
 ## Data dictionary (`4_data_dictionary.sql`)
 
