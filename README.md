@@ -97,3 +97,14 @@ Jag har använt Claude (Anthropic) som stöd under labben: för att rensa Excel-
 till en CSV, felsöka setup och inläsning, ta fram och förklara SQL-frågorna, sammanställa
 intervjuanteckningarna och skriva denna README. Alla frågor har jag kört själv i
 Oracle och kontrollerat resultaten.
+
+## Data dictionary (`4_data_dictionary.sql`)
+
+Med Oracles data dictionary kan man ta fram information om databasen själv:
+
+- `DESC myh_2025` och `USER_TAB_COLUMNS` visar tabellens 28 kolumner och datatyper
+  (`VARCHAR2` för text, `NUMBER` för tal). `diarienummer` har `NULLABLE = N`.
+- `USER_CONSTRAINTS` visar restriktionen av typ `P` (primary key) på `diarienummer`,
+  vilket gör att varje ansökan bara kan finnas en gång.
+- `USER_TABLES` visar att tabellen finns i schemat. `NUM_ROWS` är tom eftersom
+  statistik inte har samlats in; det riktiga antalet (1184) fås med `COUNT(*)`.
